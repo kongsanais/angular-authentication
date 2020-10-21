@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+  <button mat-button>
+      <mat-icon>menu</mat-icon>
+  </button>
+
+  <span>User management</span>
+
+  <span class="flex-fill"></span>
+
+  <div class="d-flex align-items-center">
+
+      <button mat-button aria-label="Example icon-button with a heart icon">
+          <mat-icon>search</mat-icon>
+      </button>
+
+      <div class="vl"></div>
+
+      <button mat-button aria-label="Example icon-button with a heart icon">
+          <mat-icon [matBadge]="demoMailNoti" matBadgeColor="accent">mail_outline</mat-icon>
+      </button>
+
+      <div class="vl"></div>
+
+      <button mat-button aria-label="Example icon-button with a heart icon">
+          <mat-icon [matBadge]="demoNoti" matBadgeColor="warn">notifications_none</mat-icon>
+      </button>
+
+  </div>
+
+
+</mat-toolbar>
