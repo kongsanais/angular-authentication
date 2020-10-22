@@ -14,6 +14,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatTableModule} from '@angular/material/table';
 /* end material component */
 
 import { HeaderComponent } from './_component/header/header.component';
@@ -43,7 +44,8 @@ import { StockEditComponent } from './stock/stock-edit/stock-edit.component';
     MatSidenavModule,
     MatListModule,
     MatMenuModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
