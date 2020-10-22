@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  @Input("media_query") mobileQueryMax: boolean;
+  @Output("toggle") navToggle = new EventEmitter();
+  @Output() getText = new EventEmitter<String>();
+
+  
   demoMailNoti = 50;
   demoNoti = 9;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+  }
+
+  onClickNavToggle(){
+    this.navToggle.emit(); //void
+    this.getText.emit("Noob Kong"); //return string
   }
 
 }

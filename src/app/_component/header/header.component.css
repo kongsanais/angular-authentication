@@ -1,0 +1,13 @@
+.vl
+{
+  object-fit: cover;
+  border-left: 1px solid white;
+  margin: 0 15px;
+  height: 20px;
+}
+
+.avatar{
+  border: 1px solid white;
+  height: 2.5rem;
+  width: 2.5rem;
+}

@@ -17,12 +17,20 @@ import {MatBadgeModule} from '@angular/material/badge';
 /* end material component */
 
 import { HeaderComponent } from './_component/header/header.component';
+import { SideNavComponent } from './_component/side-nav/side-nav.component';
+import { StockHomeComponent } from './stock/stock-home/stock-home.component';
+import { StockCreateComponent } from './stock/stock-create/stock-create.component';
+import { StockEditComponent } from './stock/stock-edit/stock-edit.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SideNavComponent,
+    StockHomeComponent,
+    StockCreateComponent,
+    StockEditComponent
   ],
   imports: [
     BrowserModule,

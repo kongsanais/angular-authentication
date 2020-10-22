@@ -1,10 +1,10 @@
 <mat-toolbar color="primary">
-  <button mat-button>
+
+  <button (click)="onClickNavToggle()" mat-button>
       <mat-icon>menu</mat-icon>
   </button>
 
-  <span>User management</span>
-
+  <span *ngIf="!mobileQueryMax">User management</span>
   <span class="flex-fill"></span>
 
   <div class="d-flex align-items-center">
@@ -27,5 +27,25 @@
 
   </div>
 
+  <button mat-button [matMenuTriggerFor]="menu">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png"
+     class="avatar rounded-circle bg-white">
+     <span class="ml-2" >Hatsanai</span>
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Redial</span>
+    </button>
+    <button mat-menu-item disabled>
+      <mat-icon>voicemail</mat-icon>
+      <span>Check voice mail</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>logout</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
 
 </mat-toolbar>
