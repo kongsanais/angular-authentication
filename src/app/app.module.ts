@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms'
 
 /* start material component*/
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -15,6 +16,10 @@ import {MatListModule} from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatSortModule} from '@angular/material/sort';
+import {MatPaginatorModule} from '@angular/material/paginator';
 /* end material component */
 
 import { HeaderComponent } from './_component/header/header.component';
@@ -37,6 +42,7 @@ import { StockEditComponent } from './stock/stock-edit/stock-edit.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
@@ -45,7 +51,11 @@ import { StockEditComponent } from './stock/stock-edit/stock-edit.component';
     MatListModule,
     MatMenuModule,
     MatBadgeModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSortModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
